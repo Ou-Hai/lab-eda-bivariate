@@ -1,0 +1,119 @@
+📊 Amazon UK Product Insights
+
+Exploratory Data Analysis – Bivariate Analysis (Business Report)
+
+1. Business Objective
+
+The objective of this analysis is to explore relationships between key product characteristics on Amazon UK in order to derive actionable business insights.
+Specifically, the analysis focuses on:
+	•	The relationship between product categories and best-seller status
+	•	Differences in price levels and distributions across product categories
+	•	Differences in customer ratings across categories
+	•	The relationship between product price and customer ratings
+
+The ultimate goal is to support pricing strategy, category selection, and product positioning decisions.
+
+⸻
+
+2. Product Categories and Best-Seller Status
+
+Key Findings
+
+A crosstab analysis was conducted between product category and best-seller status, followed by a Chi-square test of independence.
+	•	Across all categories, best-seller products represent a small proportion of total products (generally below 10%)
+	•	Despite the low absolute proportion, best-seller prevalence varies significantly across categories
+	•	The Chi-square test returned a p-value close to 0, leading to rejection of the null hypothesis of independence
+	•	Cramér’s V ≈ 0.12, indicating a statistically significant but weak association
+
+Business Interpretation
+	•	Becoming a best-seller on Amazon UK is a rare outcome, not the norm
+	•	Product category plays a meaningful role in shaping the likelihood of achieving best-seller status
+	•	From a business perspective:
+	•	Category choice influences competitive dynamics and visibility
+	•	Sellers should account for category-level competition rather than relying solely on product-level features
+
+⸻
+
+3. Product Price Distribution Across Categories
+
+Key Findings
+
+After removing extreme price outliers using the IQR method, price distributions were analyzed across all categories.
+	•	Categories with the highest median prices are primarily:
+	•	Technology-intensive and durable goods (e.g., Laptops, Desktop PCs, 3D Printers)
+	•	Everyday consumer goods and gift categories tend to have lower median prices
+	•	Median price provides a more stable measure than average price, which is sensitive to extreme values
+
+Business Interpretation
+	•	Product categories differ substantially in their price ceilings
+	•	High-median-price categories:
+	•	Typically involve longer decision-making cycles
+	•	Require stronger emphasis on specifications, brand reputation, and perceived value
+	•	Low-price categories are more suitable for:
+	•	Volume-driven strategies
+	•	Promotions and price competitiveness
+
+⸻
+
+4. Average Product Prices by Category
+
+Key Findings
+
+When comparing average prices across categories:
+	•	Categories with the highest average prices are not necessarily the most frequent or popular
+	•	A small number of expensive products can significantly inflate the mean price
+
+Business Interpretation
+	•	Average price reflects potential revenue per unit, but can be misleading
+	•	Median price better represents the typical customer experience
+	•	Strategic pricing decisions should consider both metrics:
+	•	Mean price for revenue potential
+	•	Median price for market positioning
+
+⸻
+
+5. Customer Ratings Across Product Categories
+
+Key Findings
+
+An analysis of rating distributions revealed that:
+	•	Median ratings across many categories cluster tightly between 4.2 and 4.4 stars
+	•	Differences in median ratings across categories are relatively small
+	•	Some categories show zero median ratings due to limited or missing reviews
+
+Business Interpretation
+	•	Amazon ratings exhibit a ceiling effect, with most products rated highly
+	•	Rating differences alone may provide limited differentiation
+	•	Review volume and qualitative feedback may be more impactful than marginal rating improvements
+
+⸻
+
+6. Relationship Between Product Price and Ratings
+
+Key Findings
+
+Correlation analysis between price and ratings showed:
+	•	Pearson correlation ≈ -0.12
+	•	Spearman correlation ≈ -0.13
+	•	Scatter plots reveal no clear linear or monotonic relationship
+
+Business Interpretation
+	•	Higher-priced products do not systematically receive higher ratings
+	•	Premium products may face higher customer expectations, leading to stricter evaluations
+	•	Pricing strategy should not assume a direct link between higher prices and customer satisfaction
+
+⸻
+
+7. Overall Business Conclusions
+	•	Best-seller status is rare and varies by product category
+	•	Category selection plays a strategic role in competitiveness and visibility
+	•	Pricing structures differ substantially across categories and must be category-specific
+	•	Product price and customer ratings are weakly and negatively correlated
+	•	Effective decision-making requires a holistic approach, integrating category dynamics, pricing strategy, and customer expectations
+
+⸻
+
+8. Strategic Implications
+	•	Sellers should evaluate category attractiveness before launching products
+	•	Pricing strategies must align with category norms rather than platform-wide averages
+	•	Customer satisfaction strategies should prioritize value delivery and experience, not price alone
